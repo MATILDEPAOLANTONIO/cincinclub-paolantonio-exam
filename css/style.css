@@ -69,3 +69,15 @@ a:hover { color: var(--burgundy); }
 .hero { background: var(--blue-light); padding: 48px 0 90px; }
 .hero .hot { color: var(--pink-dark); display: block; }
 .lead { font-size: 1.25rem; max-width: 30em; margin-bottom: 1.6em; }
+
+/* 6. LAYOUT A DUE COLONNE */
+.split { display: flex; flex-wrap: wrap; align-items: center; gap: 48px; }
+.split > * { flex: 1 1 400px; min-width: 0; }
+
+/* 7. COLLAGE SCRAPBOOK */
+.collage { position: relative; width: 100%; max-width: 520px; aspect-ratio: 1 / 1.1; margin: 0 auto; }
+.photo { position: absolute; }
+.photo img { width: 100%; border-radius: 18px; box-shadow: 0 8px 20px rgba(109, 31, 54, .25); }
+
+/* una classe per ogni elemento del collage */
+.c-duomo { left: 8%; top: 5%; width: 58%; transform: rotate(3deg); z-index: 1; }
