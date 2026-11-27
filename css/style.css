@@ -1,6 +1,6 @@
 /* ===== Cin Cin Club - style.css ===== */
 
-/* 1. COLORI*/
+/* COLORI*/
 :root {
   --cream: #FFF6E9;
   --pink-light: #F8D7DD;
@@ -11,7 +11,7 @@
   --white: #FFFFFF;
 }
 
-/* 2. BASE */
+/* BASE */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 body {
@@ -32,7 +32,7 @@ a { color: var(--pink-dark); }
 a:hover { color: var(--burgundy); }
 :focus-visible { outline: 3px solid var(--burgundy); outline-offset: 3px; }
 
-/* 3. CONTENITORE e BOTTONI */
+/* CONTENITORE e BOTTONI */
 .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
 
 .btn {
@@ -47,3 +47,20 @@ a:hover { color: var(--burgundy); }
   cursor: pointer;
 }
 .btn:hover { background: var(--burgundy); color: var(--white); }
+
+/* HEADER */
+.site-header { background: var(--blue-light); }
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* clamp(minimo, preferito, massimo): il logo si adatta alla larghezza dello schermo */
+.brand img { height: clamp(120px, 28vw, 220px); width: auto; }
+.nav { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; }
+.nav a:not(.btn) { color: var(--burgundy); font-weight: 700; text-decoration: none; }
+.nav a:not(.btn):hover { text-decoration: underline; }
