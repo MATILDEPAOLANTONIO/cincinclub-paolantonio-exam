@@ -64,3 +64,8 @@ a:hover { color: var(--burgundy); }
 .nav { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; }
 .nav a:not(.btn) { color: var(--burgundy); font-weight: 700; text-decoration: none; }
 .nav a:not(.btn):hover { text-decoration: underline; }
+
+/* HERO */
+.hero { background: var(--blue-light); padding: 48px 0 90px; }
+.hero .hot { color: var(--pink-dark); display: block; }
+.lead { font-size: 1.25rem; max-width: 30em; margin-bottom: 1.6em; }
